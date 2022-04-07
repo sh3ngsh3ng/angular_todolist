@@ -1,0 +1,10 @@
+<!-- render list -->
+<br>
+<ol *ngFor="let item of items; let i = index">
+    <li value="{{i + 1}}">{{item}}</li>
+</ol>
+
+
+<br>
+<app-adder (childItemEvent)="finalAddToList($event)"></app-adder>
+
